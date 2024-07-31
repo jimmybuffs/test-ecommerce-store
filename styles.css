@@ -1,42 +1,88 @@
+:root {
+    --color-hover: #e7f1d9;
+}
+
 * {
     font-family: 'Lato', sans-serif;
-    margin: 0;
+    margin: 1;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid white;
+}
+
+body {
     background: #001514;
     color: #D9DBF1;
+    padding: 0.5rem
 }
 
-.title-card {
+.main-header-container {
     display: flex;
-    align-content: center;
-
-
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
 }
 
-.name {
+.brand {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.brand-name {
+    align-items: center;
+} 
+
+
+.logo {
+    font-size: 3rem;
 }
 
 .quote {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
 }
 
-.logo-img {
-    max-width: 100px;
-    max-height: 100px;
-    overflow: hidden;
+.links-to-personal {
     display: flex;
-    aspect-ratio: 16/9;
-    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
 }
 
-.logo-img img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+.shopping-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anchor-text {
+    text-decoration: none;
+    transition-duration: 200ms;
+    color: #D9DBF1;
+}
+
+.anchor-text:hover {
+    color: var(--color-hover);
+}
+
+.anchor-icon {
+    text-decoration: none;
+    transition-duration: 200ms;
+    color: #D9DBF1;
+}
+
+.anchor-icon:hover {
+    color: var(--color-hover);
+}
+
+
+@media (max-width: 480px) {
+
+    .quote {
+        display: none;
+    }    
 }
