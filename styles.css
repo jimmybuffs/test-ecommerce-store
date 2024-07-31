@@ -4,7 +4,7 @@
 
 * {
     font-family: 'Lato', sans-serif;
-    margin: 1;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -12,7 +12,7 @@
 body {
     background: #001514;
     color: #D9DBF1;
-    padding: 0.5rem
+    padding: 0rem
 }
 
 .main-header-container {
@@ -32,7 +32,6 @@ p {
     align-items: center;
     justify-content: flex-start;
     gap: 1rem;
-    width: min-content;
 }
 
 .brand h1 {
@@ -96,8 +95,18 @@ p {
     background: var(--color-hover);
 }
 
+.main-page-container {
+    display: flex;
+}
+
+main {
+    display: grid;
+}
+
 .sidebar {
+    
     padding: 20px;
+    flex: 1;
     margin-right: 60px;
     /*add a border to the right? */
 }
@@ -116,6 +125,21 @@ p {
 
 .sidebar ul > li {
     padding: 0.25rem 0;
+}
+
+
+.main {
+    display: grid;
+    justify-content: center;
+    padding: 2rem 0rem;
+
+}
+
+
+.promo-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 480px) {
