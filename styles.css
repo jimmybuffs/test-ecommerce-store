@@ -139,8 +139,9 @@ p {
     flex-direction: column;
 }
 
-.main h2 {
+.promo-image h2 {
     font-size: 50px;
+    border-bottom: 1px solid var(--color-hover);
     /*ASSIGN THIS A NEW FONT*/
 }
 /* main promotional image */
@@ -164,11 +165,66 @@ p {
     justify-content: center;
     gap: 2rem;
 }
-/*arrows next to the promotional image */
+/*arrows next to the promotional image. I dont want these to show on mobile screens, as you would just swipe to change images */
 .arrow {
     font-size: 50px;
 }
 
+
+.top-sellers {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.top-sellers h2 {
+    border-bottom: 1px solid var(--color-hover);
+    display: flex;
+    justify-content: center;
+}
+
+.top-sellers-container {
+    display: flex;
+}
+
+.book1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.book1 img {
+     max-width: 40%;
+     max-height: 40%;
+     
+}
+
+
+.review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.review-star {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.review-button {
+    background: var(--color-hover);
+}
+
+.book1dets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 /* make it mobile responsive */
 @media (max-width: 480px) {
 
@@ -193,7 +249,8 @@ p {
     }
 
     .promo-image img {
-        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
         padding-top: 1rem;
         padding-left: 0;
         padding-right: 0px;
@@ -202,5 +259,18 @@ p {
     .arrow {
        display: none;
 
+    }
+}
+
+
+
+
+@media (min-width: 1080px) {
+    .top-sellers {
+        padding: 5rem;
+    }
+
+    .top-sellers h2 {
+        font-size: 50px;
     }
 }
