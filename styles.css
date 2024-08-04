@@ -172,7 +172,7 @@ p {
 
 
 .top-sellers {
-    display: grid;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -180,16 +180,21 @@ p {
 }
 
 .top-sellers h2 {
+    font-size: 60px;
     border-bottom: 1px solid var(--color-hover);
-    display: flex;
-    justify-content: center;
 }
 
 .top-sellers-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "wayofkings chngs"
+        "book3 book4"
+        "book5 book6";
 }
 
-.book1 {
+.book {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,7 +202,7 @@ p {
     gap: 0.5rem;
 }
 
-.book1 img {
+.book img {
      max-width: 40%;
      max-height: 40%;
      
@@ -216,14 +221,12 @@ p {
     gap: 0.2rem;
 }
 
-.review-button {
-    background: var(--color-hover);
-}
 
 .book1dets {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 /* make it mobile responsive */
 @media (max-width: 480px) {
