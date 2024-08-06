@@ -111,8 +111,9 @@ p {
 .sidebar {
     padding: 20px;
     margin-right: 60px;
-    position: -webkit-sticky !important;
+    position: sticky;
     top: 0px;
+    max-height: 400px;
 
 }
 
